@@ -64,4 +64,6 @@ networks:
 
 volumes:
   public:
+    external: true
   storage:
+    external: true
