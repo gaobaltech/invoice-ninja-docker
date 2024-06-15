@@ -4,7 +4,7 @@ services:
     image: nginx
     restart: always
     environment:
-      - 'APP_URL=http://s8g4cg0.95.217.8.150.sslip.io'
+      - 'APP_URL=http://s8g4cg0.95.217.8.150.sslip.io:8081'
     volumes:
       - 'nginx_config:/etc/nginx/conf.d:ro'
       - 'public_data:/var/www/app/public:ro'
@@ -19,7 +19,7 @@ services:
     environment:
       - APP_DEBUG=true
       - APP_KEY=gyKTjSDudh8SM0+i7dMAqtADAON+o8tQREEP4Bfp95E=
-      - 'APP_URL=http://in.localhost:8081'
+      - 'APP_URL=http://s8g4cg0.95.217.8.150.sslip.io:8081'
       - DB_CONNECTION=mysql
       - DB_HOST=db
       - DB_PORT=3306
